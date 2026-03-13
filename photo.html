@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" class="noise">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photography — Moztabir Islam</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="noise">
+  <div id="introLoader" aria-hidden="true"></div>
+  <div id="transitionOverlay" aria-hidden="true"></div>
+
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="mono" style="display:flex;align-items:center;gap:10px;">
+        <span class="dot"></span> Moztabir Islam
+      </a>
+      <div class="nav-right mono">
+        <a class="btn" href="projects.html">Projects</a>
+        <a class="btn" href="about.html">About</a>
+        <a class="btn" href="photo.html">Photography</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div style="display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;">
+        <div>
+          <div class="mono muted" style="font-size:12px;">GALLERY</div>
+          <h1 style="margin-top:6px;font-size:clamp(30px,4vw,54px);font-weight:650;">Photography</h1>
+          <p class="muted" style="margin-top:10px;max-width:70ch;line-height:1.6;">
+            Portrait + landscape. Click a photo for full view.
+          </p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <button class="btn mono" data-filter="portrait">Portrait</button>
+          <button class="btn mono" data-filter="landscape">Landscape</button>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px;padding:18px;">
+        <div class="mono muted" style="font-size:12px;margin-bottom:10px;">click to view</div>
+        <div id="photoGrid" class="photo-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" aria-hidden="true">
+    <div class="container" style="height:100%;display:flex;align-items:center;justify-content:center;">
+      <div class="card" style="width:min(980px, 96vw); padding:14px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;">
+          <div class="mono" style="font-size:14px;" id="lbTitle">Photo</div>
+          <button class="btn mono" id="lbClose">close</button>
+        </div>
+        <div style="margin-top:12px;border-radius:14px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.05);overflow:hidden;">
+          <img id="lbImg" src="" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-cursor" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path
+      d="M5 10.5L17.8 5.6C18.9 5.2 19.9 6.3 19.4 7.3L14.2 18.2C13.7 19.3 12.1 19.2 11.7 18.1L10.4 14.5L6.8 13.2C5.7 12.8 5.6 11 6.7 10.6Z"
+      stroke="rgba(255,255,255,.92)"
+      stroke-width="1.7"
+      stroke-linejoin="round"
+    />
+  </svg>
+</div>
+
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/transitions.js"></script>
+  <script src="assets/js/photo.js"></script>
+  <script src="assets/js/cursor.js"></script>
+</body>
+</html>

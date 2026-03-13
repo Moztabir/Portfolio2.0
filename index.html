@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en" class="noise">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moztabir Islam — Web & Game Developer</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="noise">
+  <!-- Loader -->
+  <div id="introLoader" aria-hidden="true">
+    <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;">
+      <div class="loader-panel">
+        <div style="display:flex;align-items:center;justify-content:space-between;">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span class="dot"></span>
+            <span class="mono muted" style="font-size:12px;">BOOT</span>
+          </div>
+          <span class="mono muted" style="font-size:12px;" id="bootPct">0%</span>
+        </div>
+
+        <div class="hr" style="margin:14px 0;"></div>
+
+        <div class="mono muted" style="font-size:12px;display:grid;gap:6px;">
+          <div id="bootLine1">initializing ui…</div>
+          <div id="bootLine2">mounting pages…</div>
+          <div id="bootLine3">warming animations…</div>
+        </div>
+
+        <div style="margin-top:14px;" class="progress">
+          <div id="bootBar"></div>
+        </div>
+
+        <div style="margin-top:12px;display:flex;justify-content:space-between;">
+          <span class="mono muted" style="font-size:12px;">nothing/red</span>
+          <span class="mono muted" style="font-size:12px;">v1.0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="transitionOverlay" aria-hidden="true"></div>
+<header>
+  <div class="container nav">
+    
+    <a href="index.html" class="logo mono">
+      <span class="dot"></span> Moztabir Islam
+    </a>
+
+    <div class="nav-right mono">
+      <a class="nav-btn liquid-btn" href="about.html">
+        <span>About</span>
+        <div class="liquid"></div>
+      </a>
+
+      <a class="nav-btn liquid-btn" href="photo.html">
+        <span>Photography</span>
+        <div class="liquid"></div>
+      </a>
+
+      <a class="nav-btn liquid-btn" href="projects.html">
+        <span>Projects</span>
+        <div class="liquid"></div>
+      </a>
+
+      <a class="nav-btn liquid-btn" href="Resume.html">
+        <span>Resume</span>
+        <div class="liquid"></div>
+      </a>
+    </div>
+
+  </div>
+</header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="section">
+      <div class="card hero-panel" style="padding:22px;">
+        <div class="hero-spotlight" aria-hidden="true"></div>
+        <div class="mono" style="font-size:12px; opacity:.65;">INTRO</div>
+        <div class="hr" style="margin:12px 0;"></div>
+
+        <div class="hero-copy">
+  I’m <span class="u">Moztabir Islam</span>, a
+  <span class="u">web designer</span>,
+  developer, and photographer creating thoughtful digital experiences through
+  interface design, front-end development, and visual storytelling.
+  <br><br>
+  My work focuses on
+  <span class="i">clean systems</span>,
+  strong user experience, and modern aesthetics that bring together design,
+  technology, and creative direction.
+</div>
+
+<div class="hero-sub mono">
+  Brock University · Web Designer · Front-End Developer · Photographer
+</div>
+
+<div class="hero-links">
+  <a class="btn mono" href="about.html"><span class="dot"></span> About</a>
+  <a class="btn mono" href="photo.html"><span class="dot"></span> Photography</a>
+</div>
+    </section>
+
+    <!-- PROJECTS HEADING (Nothing OS style) -->
+    <section class="section" style="padding-top:0;">
+      <div class="nos-head">
+        <div class="nos-head-grid">
+          <div>
+            <div class="nos-kicker mono">
+              <span class="kdot"></span>
+              <span>SOME SELECTED</span>
+            </div>
+
+            <div class="nos-title">
+              <span class="lead-dot">.</span>PROJECTS
+            </div>
+
+            <div class="nos-sub mono">
+              Customer projects, personal projects, some research and playground.
+            </div>
+          </div>
+
+          <div class="nos-side mono">
+            <div class="tag"><strong>WEB DESIGN</strong></div>
+            <div class="tag">UI AND UX</div>
+            <div class="tag">
+              <a class="emo" aria-label="arrow" href="#list">↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nos-down">
+          <a class="down-btn emo emo-idle" aria-label="scroll down" href="#list">↓</a>
+        </div>
+
+        <div class="nos-divider"></div>
+      </div>
+    </section>
+
+    <!-- LATEST WORK (NORMAL list — no sticky/scroll effects) -->
+    <section class="lw" id="list">
+  <div class="lw__kicker mono muted">LATEST WORK</div>
+
+  <!-- Stacking Cards container -->
+  <ul class="lw__stack" id="cards" style="--numcards: 3;">
+    <!-- Card 1 -->
+    <li class="lw__stackItem" style="--index: 1;">
+      <a class="lw__stackContent" href="projects/p1.html">
+        <div class="lw__media">
+          <img src="assets/img/projects/ct_logo.png" alt="Chown Town preview">
+        </div>
+
+        <div class="lw__info">
+          <div class="lw__top mono">
+            <div>
+              <div class="lw__title">Chown Town</div>
+              <div class="lw__meta muted">Indoor Map / Wayfinding</div>
+            </div>
+
+            <div class="lw__actions">
+              <span class="lw__btn emo" aria-label="open">↗</span>
+            </div>
+          </div>
+
+          <p class="lw__desc muted">
+            Indoor navigation experience with clean UI and fast wayfinding flows.
+          </p>
+
+          <div class="lw__chips">
+            <span class="badge mono">2026</span>
+            <span class="badge mono">Web Dev / UX</span>
+            <span class="badge mono">JS</span>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <!-- Card 2 -->
+    <li class="lw__stackItem" style="--index: 2;">
+      <a class="lw__stackContent" href="projects/neon-shadows.html">
+        <div class="lw__media">
+          <img src="assets/img/projects/pp1.png" alt="Neon Shadows preview">
+        </div>
+
+        <div class="lw__info">
+          <div class="lw__top mono">
+            <div>
+              <div class="lw__title">Neon Shadows</div>
+              <div class="lw__meta muted">Twine Narrative</div>
+            </div>
+
+            <div class="lw__actions">
+              <span class="lw__btn emo" aria-label="open">↗</span>
+            </div>
+          </div>
+
+          <p class="lw__desc muted">
+            Branching cyberpunk story with replayable routes and atmosphere-driven UI.
+          </p>
+
+          <div class="lw__chips">
+            <span class="badge mono">2026</span>
+            <span class="badge mono">Narrative / Dev</span>
+            <span class="badge mono">Twine</span>
+          </div>
+        </div>
+      </a>
+    </li>
+
+    <!-- Card 3 -->
+    <li class="lw__stackItem" style="--index: 3;">
+      <a class="lw__stackContent" href="projects/ai-tic-tac-toe.html">
+        <div class="lw__media">
+          <img src="assets/img/projects/pp1.png" alt="AI Tic-Tac-Toe preview">
+        </div>
+
+        <div class="lw__info">
+          <div class="lw__top mono">
+            <div>
+              <div class="lw__title">AI Tic-Tac-Toe</div>
+              <div class="lw__meta muted">Python Game AI</div>
+            </div>
+
+            <div class="lw__actions">
+              <span class="lw__btn emo" aria-label="open">↗</span>
+            </div>
+          </div>
+
+          <p class="lw__desc muted">
+            Clean Python implementation with AI decision-making and scoring logic.
+          </p>
+
+          <div class="lw__chips">
+            <span class="badge mono">2025</span>
+            <span class="badge mono">Programming</span>
+            <span class="badge mono">Python</span>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</section>
+
+
+ <!-- PHOTOGRAPHY REVEAL -->
+<section class="ph-reveal" id="photo-reveal">
+  <p class="ph-reveal__supports mono">
+    Sorry, your browser does not support <code>animation-timeline</code>
+  </p>
+
+  <!-- This creates scroll room ONLY for this section -->
+  <div class="ph-reveal__scroll">
+    <!-- Sticky stage: stays in view while you scroll inside the section -->
+    <div class="ph-reveal__stage">
+      <div class="ph-reveal__grid">
+        <div class="ph-reveal__tile" style="--bg:url(../img/photos/l2.jpg);"></div>
+        <div class="ph-reveal__tile" style="--bg:url(../img/photos/l3.jpg);"></div>
+        <div class="ph-reveal__tile" style="--bg:url(../img/photos/l4.jpg);"></div>
+        <div class="ph-reveal__tile" style="--bg:url(../img/photos/l5.jpg);"></div>
+        <div class="ph-reveal__tile" style="--bg:url(../img/photos/l6.jpg);"></div>
+        <div class="ph-reveal__tile" style="--bg:url(../img/photos/l7.jpg);"></div>
+        <div class="ph-reveal__tile" style="--bg:url(../img/photos/l8.jpg);"></div>
+        <div class="ph-reveal__tile" style="--bg:url(../img/photos/l9.jpg);"></div>
+
+        <div class="ph-reveal__center" style="--bg:url(../img/photos/l1.jpg);">
+          <hgroup>
+            <h2 class="mono">PHOTOGRAPHY</h2>
+            <p class="mono muted">Scroll to reveal the images</p>
+          </hgroup>
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 40" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" class="ph-reveal__mouse">
+            <path d="M6 7a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-4a4 4 0 0 1 -4 -4z" />
+            <path d="M12 7v4" />
+            <path d="M8 26l4 4l4 -4">
+              <animateTransform attributeType="XML" attributeName="transform" type="translate"
+                                values="0 0; 0 4; 0 0" dur="1s" repeatCount="indefinite" />
+            </path>
+          </svg>
+
+          <div class="ph-reveal__cta">
+            <a class="btn mono" href="photo.html"><span class="dot"></span> open gallery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <div class="arrow-cursor" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path
+      d="M5 10.5L17.8 5.6C18.9 5.2 19.9 6.3 19.4 7.3L14.2 18.2C13.7 19.3 12.1 19.2 11.7 18.1L10.4 14.5L6.8 13.2C5.7 12.8 5.6 11 6.7 10.6Z"
+      stroke="rgba(255,255,255,.92)"
+      stroke-width="1.7"
+      stroke-linejoin="round"
+    />
+  </svg>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js"></script>
+
+<script src="assets/js/loader.js"></script>
+<script src="assets/js/transitions.js"></script>
+<script src="assets/js/emoji.js"></script>
+<script src="assets/js/gsap-home.js"></script>
+<script src="assets/js/cursor.js"></script>
+
+</body>
+</html>

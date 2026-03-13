@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" class="noise">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Moztabir Islam</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="noise">
+  <div id="introLoader" aria-hidden="true"></div>
+  <div id="transitionOverlay" aria-hidden="true"></div>
+
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="mono" style="display:flex;align-items:center;gap:10px;">
+        <span class="dot"></span> Moztabir Islam
+      </a>
+      <div class="nav-right mono">
+        <a class="btn" href="projects.html">Projects</a>
+        <a class="btn" href="about.html">About</a>
+        <a class="btn" href="photo.html">Photography</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="mono muted" style="font-size:12px;">ABOUT</div>
+      <h1 style="margin-top:6px;font-size:clamp(30px,4vw,54px);font-weight:650;">
+        A system of <span class="accent">glimpses</span>, motion, and control.
+      </h1>
+
+      <div class="grid grid-12" style="margin-top:22px;align-items:start;">
+        <div class="col-7 card" id="aboutIntro" style="padding:18px;">
+          <div class="mono muted" style="font-size:12px;">BIO</div>
+          <p class="muted" style="margin-top:10px;line-height:1.7;">
+            Replace this with your real description. Keep it sharp + techy. Think product UI tone.
+          </p>
+          <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;">
+            <span class="badge mono">web</span>
+            <span class="badge mono">games</span>
+            <span class="badge mono">ui/ux</span>
+            <span class="badge mono">photo</span>
+          </div>
+        </div>
+
+        <div class="col-5 card" id="scanCard" style="padding:18px;overflow:hidden;">
+          <div class="mono muted" style="font-size:12px;">SCAN</div>
+          <div style="margin-top:12px;position:relative;height:260px;border-radius:14px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.05);overflow:hidden;">
+            <div id="scanLine" style="position:absolute;left:0;right:0;height:2px;background:var(--accent);opacity:.85;top:14px;"></div>
+            <div style="position:absolute;inset:0;opacity:.22;background:repeating-linear-gradient(0deg, rgba(255,255,255,.06) 0 1px, transparent 1px 4px);"></div>
+            <div class="mono" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:12px;">
+              drop a portrait later
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="pinSection" style="margin-top:18px;padding:18px; overflow:hidden;">
+        <div class="mono muted" style="font-size:12px;">PINNED SCENE</div>
+        <div class="hr" style="margin:12px 0;"></div>
+
+        <div id="bigWords" style="display:grid;gap:14px;">
+          <div class="bigWord" style="font-size:clamp(28px,3.6vw,44px);font-weight:650;">Designing interaction like hardware.</div>
+          <div class="bigWord muted" style="font-size:clamp(18px,2.3vw,26px);">Minimal surfaces, maximum intention.</div>
+          <div class="bigWord" style="font-size:clamp(22px,2.8vw,34px);font-weight:650;">Red signals. Mono labels. Quiet power.</div>
+        </div>
+      </div>
+
+      <div class="card" id="skillsZone" style="margin-top:18px;padding:18px;">
+        <div class="mono muted" style="font-size:12px;">SKILLS</div>
+        <div class="muted" style="margin-top:8px;">Hover to disturb the field.</div>
+        <div id="chips" style="margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;">
+          <span class="badge mono chip">JavaScript</span>
+          <span class="badge mono chip">GSAP</span>
+          <span class="badge mono chip">UI/UX</span>
+          <span class="badge mono chip">Unity</span>
+          <span class="badge mono chip">Three.js</span>
+          <span class="badge mono chip">Python</span>
+          <span class="badge mono chip">Figma</span>
+          <span class="badge mono chip">Photography</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <div class="arrow-cursor" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path
+      d="M5 10.5L17.8 5.6C18.9 5.2 19.9 6.3 19.4 7.3L14.2 18.2C13.7 19.3 12.1 19.2 11.7 18.1L10.4 14.5L6.8 13.2C5.7 12.8 5.6 11 6.7 10.6Z"
+      stroke="rgba(255,255,255,.92)"
+      stroke-width="1.7"
+      stroke-linejoin="round"
+    />
+  </svg>
+</div>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/transitions.js"></script>
+  <script src="assets/js/about-gsap.js"></script>
+  <script src="assets/js/cursor.js"></script>
+</body>
+</html>
